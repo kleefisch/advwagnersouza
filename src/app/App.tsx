@@ -6,6 +6,8 @@ import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "./
 import { MobileMenu } from "./components/mobile-menu"
 import { SpecialtyCard } from "./components/specialty-card"
 import { motion, AnimatePresence } from "motion/react"
+import wagnerHeroImage from "../imports/wagner-hero-1.png"
+import wagnerAboutImage from "../imports/wagner-about.png"
 
 export default function App() {
   const [scrolled, setScrolled] = useState(false)
@@ -231,7 +233,7 @@ export default function App() {
               <div className="aspect-[4/5] rounded-sm relative overflow-hidden shadow-2xl bg-gradient-to-br from-[#0F172A] to-[#1E293B]">
                 {/* Image with overlay */}
                 <img
-                  src="/src/imports/wagner-hero-1.png"
+                  src={wagnerHeroImage}
                   alt="Advogado Profissional"
                   className="w-full h-full object-contain"
                 />
@@ -877,7 +879,7 @@ export default function App() {
             >
               <div className="w-full max-w-[400px] h-[650px] rounded-sm relative overflow-hidden shadow-2xl">
                 <img
-                  src="/src/imports/wagner-about.png"
+                  src={wagnerAboutImage}
                   alt="Dr. Wagner Souza"
                   className="w-full h-full object-cover object-top scale-x-[-1]"
                 />
@@ -1929,7 +1931,7 @@ export default function App() {
             <div className="bg-white p-4 flex items-center gap-3 relative border-b border-gray-100">
               <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#0F172A] to-[#1E293B] flex items-center justify-center overflow-hidden">
                 <img
-                  src="/src/imports/wagner-about.png"
+                  src={wagnerAboutImage}
                   alt="Dr. Wagner Souza"
                   className="w-full h-full object-cover object-top"
                 />
